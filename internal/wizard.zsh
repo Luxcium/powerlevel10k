@@ -753,7 +753,7 @@ function ask_python() {
 function ask_arrow() {
   add_widget 0 flowing -c %BDoes this look like%b "%2F><%f" %Bbut taller and "fatter?%b"
   add_widget 0 print -P ""
-  add_widget 0 flowing -c -- "--->  \u276F\u276E  <---"
+  add_widget 0 flowing -c -- "--->  \u2446\u276E  <---"
   add_widget 0 print -P ""
   add_widget 3
   add_widget 0 print -P "%B(y)  Yes.%b"
@@ -1969,7 +1969,7 @@ while true; do
   local instant_prompt=verbose zshrc_content= zshrc_backup= zshrc_backup_u=
   local -i zshrc_has_cfg=0 zshrc_has_instant_prompt=0 write_zshrc=0
   local POWERLEVEL9K_MODE= POWERLEVEL9K_ICON_PADDING=moderate style= config_backup= config_backup_u=
-  local gap_char=' ' prompt_char='❯' down_triangle='\uE0BC' up_triangle='\uE0BA' slanted_bar='\u2571'
+  local gap_char=' ' prompt_char='⑆' down_triangle='\uE0BC' up_triangle='\uE0BA' slanted_bar='\u2571'
   local left_subsep= right_subsep= left_tail= right_tail= left_head= right_head= time=
   local -i num_lines=2 empty_line=0 color=2 left_frame=1 right_frame=1 transient_prompt=0
   local -i cap_diamond=0 cap_python=0 cap_debian=0 cap_lock=0 cap_arrow=0

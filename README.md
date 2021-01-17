@@ -266,7 +266,7 @@ enable as many segments as you like. It won't slow down your prompt or Zsh start
 | `os_icon` | your OS logo (apple for macOS, swirl for debian, etc.) |
 | `dir` | current working directory |
 | `vcs` | Git repository status |
-| `prompt_char` | multi-functional prompt symbol; changes depending on vi mode: `❯`, `❮`, `V`, `▶` for insert, command, visual and replace mode respectively; turns red on error |
+| `prompt_char` | multi-functional prompt symbol; changes depending on vi mode: `⑆`, `❮`, `V`, `▶` for insert, command, visual and replace mode respectively; turns red on error |
 | `context` | user@hostname |
 | `status` | exit code of the last command |
 | `command_execution_time` | duration (wall time) of the last command |
@@ -1185,8 +1185,8 @@ all commands start from the same offset is also nice.
 Similarly, if you enable transient prompt, sparse prompt (with an empty line before prompt) is a
 great choice.
 
-If you are using vi keymap, choose prompt with `prompt_char` in it (shown as green `❯` in the
-wizard). This symbol changes depending on vi mode: `❯`, `❮`, `V`, `▶` for insert, command, visual
+If you are using vi keymap, choose prompt with `prompt_char` in it (shown as green `⑆` in the
+wizard). This symbol changes depending on vi mode: `⑆`, `❮`, `V`, `▶` for insert, command, visual
 and replace mode respectively. When a command fails, the symbol turns red. *Lean* style always has
 `prompt_char` in it. *Rainbow* and *Classic* styles have it only in the two-line configuration
 without left frame.
@@ -1322,17 +1322,17 @@ rendering imperfections that afflict powerline-style prompt.
 
 ### Error: character not in range
 
-Type `echo '\u276F'`. If you get an error saying "zsh: character not in range", your locale
+Type `echo '\u2446'`. If you get an error saying "zsh: character not in range", your locale
 doesn't support UTF-8. You need to fix it. If you are running Zsh over SSH, see
 [this](https://github.com/romkatv/powerlevel10k/issues/153#issuecomment-518347833). If you are
 running Zsh locally, Google "set UTF-8 locale in *your OS*".
 
 ### Cursor is in the wrong place
 
-Type `echo '\u276F'`. If you get an error saying "zsh: character not in range", see the
+Type `echo '\u2446'`. If you get an error saying "zsh: character not in range", see the
 [previous section](#zsh-character-not-in-range).
 
-If the `echo` command prints `❯` but the cursor is still in the wrong place, install
+If the `echo` command prints `⑆` but the cursor is still in the wrong place, install
 [the recommended font](#meslo-nerd-font-patched-for-powerlevel10k) and run
 `p10k configure`.
 
